@@ -1,4 +1,3 @@
-
 local ScreenGui1 = Instance.new("ScreenGui")
 local Closed = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -8,12 +7,12 @@ ScreenGui1.Parent = game.CoreGui
 ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Closed.Parent = ScreenGui1
-Closed.BackgroundColor3 = Color3.fromRGB(0,255,0)
+Closed.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
 Closed.BorderSizePixel = 0
 Closed.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 Closed.Size = UDim2.new(0, 50, 0, 50)
 Closed.Draggable = true
-Closed.Image = "rbxassetid://13717478897"
+Closed.Image = "rbxassetid://16266479120"
 Closed.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -26,7 +25,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
         game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 
-    _G.Color = Color3.fromRGB(0,255,0)
+    _G.Color = Color3.fromRGB(30, 28, 39)
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
     
     repeat wait() until game:GetService("Players")
@@ -177,7 +176,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                     wait(0.1) 
                     game:GetService('TweenService'):Create(
                         UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(0,255,0)}
+                        {TextColor3 = Color3.fromRGB(30, 28, 39)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
@@ -192,7 +191,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(0, 255, 0)}
+                        {TextColor3 = Color3.fromRGB(30, 28, 39)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
@@ -364,7 +363,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                     TweenService:Create(
                         PageButton,
                         TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(0,255,0)}
+                        {TextColor3 = Color3.fromRGB(30, 28, 39)}
                     ):Play()
                 end
             end)
@@ -373,7 +372,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                 TweenService:Create(
                     PageButton,
                     TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                    {TextColor3 = Color3.fromRGB(0,255,0)}
+                    {TextColor3 = Color3.fromRGB(30, 28, 39)}
                 ):Play()
                 for i,v in next, TabFolder:GetChildren() do 
                     if v.Name == "MainTab" then
@@ -418,7 +417,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                     TweenService:Create(
                         Button,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(0,255,0)}
+                        {TextColor3 = Color3.fromRGB(30, 28, 39)}
                     ):Play()
                 end)
                 
@@ -490,7 +489,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                 ToggleImage2.Name = "ToggleImage2"
                 ToggleImage2.Parent = ToggleImage
                 ToggleImage2.AnchorPoint = Vector2.new(0.5, 0.5)
-                ToggleImage2.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                ToggleImage2.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
                 ToggleImage2.Position = UDim2.new(0, 10, 0, 10)
                 ToggleImage2.Visible = false
     
@@ -503,7 +502,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                     TweenService:Create(
                         ToggleLabel,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(0,255,0)}
+                        {TextColor3 = Color3.fromRGB(30, 28, 39)}
                     ):Play()
                 end)
     
@@ -683,7 +682,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
                         TweenService:Create(
                             DropButton2,
                             TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {TextColor3 = Color3.fromRGB(0,255,0)}
+                            {TextColor3 = Color3.fromRGB(30, 28, 39)}
                         ):Play()
                     end)
                     DropButton2.MouseLeave:Connect(function()
@@ -859,7 +858,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     
                 Bar.Name = "Bar"
                 Bar.Parent = Bar1
-                Bar.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                Bar.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
                 Bar.Size = UDim2.new(set/max, 0, 0, 5)
     
                 UICorner_2.CornerRadius = UDim.new(0, 100)
@@ -939,7 +938,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     
                 Sep1.Name = "Sep1"
                 Sep1.Parent = Seperator
-                Sep1.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                Sep1.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
                 Sep1.BorderSizePixel = 0
                 Sep1.Position = UDim2.new(0, 0, 0, 10)
                 Sep1.Size = UDim2.new(0, 150, 0, 1)
@@ -957,7 +956,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     
                 Sep2.Name = "Sep2"
                 Sep2.Parent = Seperator
-                Sep2.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                Sep2.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
                 Sep2.BorderSizePixel = 0
                 Sep2.Position = UDim2.new(0, 305, 0, 10)
                 Sep2.Size = UDim2.new(0, 150, 0, 1)
@@ -975,7 +974,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     
                 Linee.Name = "Linee"
                 Linee.Parent = Line
-                Linee.BackgroundColor3 = Color3.fromRGB(0,255,0)
+                Linee.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
                 Linee.BorderSizePixel = 0
                 Linee.Position = UDim2.new(0, 0, 0, 10)
                 Linee.Size = UDim2.new(0, 455, 0, 1)
@@ -1766,7 +1765,7 @@ for i,v in pairs(game:GetService'Players':GetChildren()) do
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
                     if v.Team == game.Players.LocalPlayer.Team then
-                        name.TextColor3 = Color3.new(0,255,0)
+                        name.TextColor3 = Color3.new(30, 28, 39)
                     else
                         name.TextColor3 = Color3.new(255,0,0)
                     end
@@ -1882,14 +1881,14 @@ for i,v in pairs(game.Workspace:GetChildren()) do
                     name.TextYAlignment = 'Top'
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
-                    name.TextColor3 = Color3.fromRGB(0,255,0)
+                    name.TextColor3 = Color3.fromRGB(30, 28, 39)
                     if v.Name == "Flower1" then 
                         name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
                         name.TextColor3 = Color3.fromRGB(0, 0, 255)
                     end
                     if v.Name == "Flower2" then
                         name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
-                        name.TextColor3 = Color3.fromRGB(0,255,0)
+                        name.TextColor3 = Color3.fromRGB(30, 28, 39)
                     end
                 else
                     v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
@@ -1922,7 +1921,7 @@ for i,v in pairs(game.Workspace.AppleSpawner:GetChildren()) do
                 name.TextYAlignment = 'Top'
                 name.BackgroundTransparency = 1
                 name.TextStrokeTransparency = 0.5
-                name.TextColor3 = Color3.fromRGB(0,255,0)
+                name.TextColor3 = Color3.fromRGB(30, 28, 39)
                 name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
             else
                 v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
@@ -2059,9 +2058,9 @@ for i,v in pairs(game:GetService'Players':GetChildren()) do
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
                     if v.Team == game.Players.LocalPlayer.Team then
-                        name.TextColor3 = Color3.new(0,255,0)
+                        name.TextColor3 = Color3.new(30, 28, 39)
                     else
-                        name.TextColor3 = Color3.new(255,0,0)
+                        name.TextColor3 = Color3.new(30, 28, 39)
                     end
                 else
                     v.Character.Head['NameEsp'..Number].TextLabel.Text = (v.Name ..' | '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Character.Head.Position).Magnitude/3) ..' Distance\nHealth : ' .. round(v.Character.Humanoid.Health*100/v.Character.Humanoid.MaxHealth) .. '%')
@@ -2175,14 +2174,14 @@ for i,v in pairs(game.Workspace:GetChildren()) do
                     name.TextYAlignment = 'Top'
                     name.BackgroundTransparency = 1
                     name.TextStrokeTransparency = 0.5
-                    name.TextColor3 = Color3.fromRGB(0,255,0)
+                    name.TextColor3 = Color3.fromRGB(30, 28, 39)
                     if v.Name == "Flower1" then 
                         name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
                         name.TextColor3 = Color3.fromRGB(0, 0, 255)
                     end
                     if v.Name == "Flower2" then
                         name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
-                        name.TextColor3 = Color3.fromRGB(0,255,0)
+                        name.TextColor3 = Color3.fromRGB(30, 28, 39)
                     end
                 else
                     v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
@@ -2215,7 +2214,7 @@ for i,v in pairs(game.Workspace.AppleSpawner:GetChildren()) do
                 name.TextYAlignment = 'Top'
                 name.BackgroundTransparency = 1
                 name.TextStrokeTransparency = 0.5
-                name.TextColor3 = Color3.fromRGB(0,255,0)
+                name.TextColor3 = Color3.fromRGB(30, 28, 39)
                 name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
             else
                 v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
@@ -3138,7 +3137,7 @@ spawn(function()
     end)
 
 ---------------------------------------------------------------------------Create Tab
-local SOMEXHUB = library:AddWindow("NeyoshiiHub",Enum.KeyCode.RightControl)
+local SOMEXHUB = library:AddWindow("Neyoshii Hub",Enum.KeyCode.RightControl)
 local Main = SOMEXHUB:AddTab("Chính","13075651575")
 local Sea = SOMEXHUB:AddTab("Sự Kiện Biển","13075651575")
 local M = SOMEXHUB:AddTab("Vật Phẩm","13075622619")
